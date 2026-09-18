@@ -1,118 +1,93 @@
-// ---------------------------------------------------------------------------
-// All portfolio copy lives here. Edit this file to update site content
-// without touching component code.
-// ---------------------------------------------------------------------------
-
 export const profile = {
   name: "Sushmita Naik",
-  role: "Full-Stack Developer · Backend Engineer · Cybersecurity Enthusiast",
-  tagline:
-    "I build systems the way I was taught rhythm: every beat accounted for, nothing left to chance.",
-  location: "Mangaluru, Karnataka, India",
-  email: "sushmitanaik2703@gmail.com", // TODO: replace with your real email
-  github: "https://github.com/Sushmitanaik2703", // TODO
-  linkedin: "https://www.linkedin.com/in/sushmitanaik2703/", // TODO
-  resumeFile: "/resume.pdf", // TODO: drop your resume PDF into /public/resume.pdf
+  intro: "I’m a Computer Science Engineering student passionate about building practical software solutions and exploring web development, AI, and cloud technologies. I enjoy learning through projects, hackathons, and hands-on challenges while continuously improving my technical skills.",
+  email: "sushmitanaik2703@gmail.com",
+  github: "https://github.com/Sushmitanaik2703",
+  linkedin: "https://www.linkedin.com/in/sushmitanaik2703/",
+  resumeFile: "/resume.pdf"
 };
 
 export const about = {
-  intro:
-    "I'm a Computer Science Engineering student at Sahyadri College of Engineering & Management, currently in my 5th semester, building toward a career in full-stack and backend systems with a strong security mindset.",
+  intro: "I’m a Computer Science Engineering student at Sahyadri College of Engineering & Management. I enjoy turning ideas into practical projects and learning through hands-on experience.",
   paragraphs: [
-    "My focus areas are full-stack web development, backend architecture, and secure coding practices. I like problems that involve real constraints — race conditions, data integrity, systems that have to hold up under load — and I enjoy the discipline of getting the details right.",
-    "Outside of engineering, I practice Bharatanatyam, a classical Indian dance form built on precise rhythmic cycles and structured movement vocabulary. It has shaped how I approach code more than I expected: both disciplines reward patience, repetition, and getting the fundamentals exactly right before you improvise.",
-    "I'm active in hackathons and structured learning programs, most recently building a video analytics platform for a national hackathon and working through Google Cloud's Arcade Facilitator Program.",
-  ],
-  highlights: [
-    { label: "Degree", value: "B.E. Computer Science Engineering, 2028" },
-    { label: "College", value: "Sahyadri College of Engineering & Management" },
-    { label: "Focus", value: "Full-Stack · Backend · Cybersecurity" },
-    { label: "Based in", value: "Mangaluru, Karnataka" },
-  ],
+    "My interests include web development, backend systems, AI, and cloud technologies. I like building projects that solve a clear problem and help me understand how different pieces of software work together.",
+    "Outside academics, I practice Bharatanatyam. Learning a classical dance form has taught me patience, discipline, consistency, and attention to detail — qualities I carry into my technical work too.",
+    "I’m active in hackathons and hands-on learning programs, where I get to experiment, collaborate, and turn concepts into working prototypes."
+  ]
 };
 
+export const highlights = [
+  { label: "Education", value: "B.E. Computer Science Engineering" },
+  { label: "College", value: "Sahyadri College of Engineering & Management" },
+  { label: "Focus", value: "Web · Backend · AI · Cloud" },
+  { label: "Outside code", value: "Bharatanatyam" }
+];
+
 export const skills = [
-  {
-    category: "Frontend",
-    items: ["React", "JavaScript (ES6+)", "HTML5 & CSS3", "Vite"],
-  },
-  {
-    category: "Backend",
-    items: ["Node.js", "Express", "REST APIs", "Redis (atomic locking)"],
-  },
-  {
-    category: "Databases",
-    items: ["PostgreSQL", "SQLite", "Firebase Firestore"],
-  },
-  {
-    category: "Security & Systems",
-    items: ["Secure coding practices", "IT Act & cyber law basics", "IAM fundamentals", "Google Cloud Platform"],
-  },
-  {
-    category: "Tools & Workflow",
-    items: ["Git & GitHub", "Postman", "Netlify", "Streamlit"],
-  },
+  { category: "Languages", items: ["Java", "C", "JavaScript", "Python"] },
+  { category: "Frontend", items: ["HTML & CSS", "React", "Vite"] },
+  { category: "Backend", items: ["Node.js", "Express.js", "REST APIs"] },
+  { category: "Data", items: ["MongoDB", "SQL"] },
+  { category: "Cloud & Tools", items: ["Google Cloud", "Git", "GitHub", "Postman"] }
 ];
 
 export const projects = [
   {
-    title: "FeeSense",
-    subtitle: "AI-powered school fee management platform",
-    description:
-      "A full-stack fintech platform for schools to track, predict, and manage fee collection. Built for the Smart School FinTech Innovation Challenge and shortlisted in Round 1.",
-    stack: ["HTML/CSS/JS", "Firebase Firestore", "Netlify"],
-    status: "Shortlisted — Round 1",
-    links: { live: "", repo: "" }, // TODO: add your links
-  },
-  {
-    title: "Movie Ticket Booking System",
-    subtitle: "Concurrency-safe backend booking engine",
-    description:
-      "A backend system that handles seat reservations without double-booking, using Redis atomic locks (SET key NX EX) to guarantee correctness under concurrent requests, with a PostgreSQL data layer and a cinema-themed React frontend.",
-    stack: ["Node.js", "Express", "PostgreSQL", "Redis", "React", "Vite"],
-    status: "Completed",
-    links: { live: "", repo: "" }, // TODO
+    title: "Travel Buddy Finder",
+    subtitle: "Full-stack travel platform",
+    description: "A MERN-based platform for discovering compatible travel companions, creating trips, sending requests and connecting through real-time chat.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "Socket.IO"],
+    status: "MERN · IN PROGRESS",
+    visual: "TRAVEL / 01",
+    links: { repo: "https://github.com/Sushmitanaik2703" }
   },
   {
     title: "BorderVision AI",
-    subtitle: "Intelligent video analytics for border surveillance",
-    description:
-      "A four-person team submission for Smart India Hackathon 2026: a video analytics platform combining object detection, tracking, and recognition to support border surveillance workflows in real time.",
-    stack: ["YOLOv8", "ByteTrack", "OpenCV", "EasyOCR / ArcFace", "SQLite", "Streamlit"],
-    status: "In progress — SIH 2026",
-    links: { live: "", repo: "" }, // TODO
+    subtitle: "CCTV / video analytics platform",
+    description: "A machine-learning based video analytics project exploring person and vehicle detection, tracking, restricted-zone monitoring and automated alerts.",
+    stack: ["YOLO", "OpenCV", "ByteTrack", "Python"],
+    status: "SIH 2026 · TEAM PROJECT",
+    visual: "VISION / 02",
+    links: { repo: "https://github.com/Sushmitanaik2703" }
   },
+  {
+    title: "Movie Ticket Booking System",
+    subtitle: "Concurrency-aware booking backend",
+    description: "A backend-focused booking system designed around seat availability, reservations and safe handling of concurrent booking requests.",
+    stack: ["Node.js", "Express", "Redis", "React"],
+    status: "BACKEND · PROJECT",
+    visual: "CINEMA / 03",
+    links: { repo: "https://github.com/Sushmitanaik2703" }
+  },
+  {
+    title: "Assignment Workflow",
+    subtitle: "Submission tracking application",
+    description: "A web application for organizing assignments, submissions and workflow states with a Node.js and MongoDB backend.",
+    stack: ["Node.js", "Express", "MongoDB"],
+    status: "WEB APP · PROJECT",
+    visual: "WORKFLOW / 04",
+    links: { repo: "https://github.com/Sushmitanaik2703" }
+  },
+  {
+    title: "Personal Portfolio",
+    subtitle: "This website",
+    description: "A responsive portfolio built with React and Vite, designed to present projects, skills, learning and personality in one place.",
+    stack: ["React", "Vite", "CSS"],
+    status: "LIVE · 2026",
+    visual: "PORTFOLIO / 05",
+    links: { repo: "https://github.com/Sushmitanaik2703/FUTURE_FS_01" }
+  }
 ];
 
-export const certifications = [
-  { name: "MERN Stack Development", grade: "Grade O" },
-  { name: "Node.js", grade: "Grade S" },
-  { name: "Google Cloud Arcade Facilitator Program 2026", grade: "In progress" },
+export const timeline = [
+  { year: "2024 — 2028", title: "B.E. Computer Science Engineering", org: "Sahyadri College of Engineering & Management", description: "Building a foundation across software engineering, algorithms, web technologies, cloud and systems." },
+  { year: "2026", title: "Smart India Hackathon", org: "BorderVision AI · Team Project", description: "Working on an ML-powered video analytics platform for automated CCTV monitoring." },
+  { year: "2026", title: "Smart School FinTech Challenge", org: "FeeSense · Team Project", description: "Worked on a practical fee-management solution for the school ecosystem." },
+  { year: "Ongoing", title: "Cloud & hands-on learning", org: "Google Cloud and independent projects", description: "Learning by building labs, prototypes and applications rather than only studying theory." }
 ];
 
-export const resumeTimeline = [
-  {
-    year: "2024 – 2028",
-    title: "B.E. Computer Science Engineering",
-    org: "Sahyadri College of Engineering & Management, Mangaluru",
-    description: "Coursework in secure coding, systems, and full-stack development. Currently in 5th semester.",
-  },
-  {
-    year: "2026",
-    title: "Smart India Hackathon 2026 — BorderVision AI",
-    org: "Team of 4",
-    description: "Built a real-time video analytics platform for border surveillance using YOLOv8, ByteTrack, and OCR/face recognition.",
-  },
-  {
-    year: "2026",
-    title: "Google Cloud Arcade Facilitator Program",
-    org: "Google Cloud Skills Boost",
-    description: "Completing skill badges and hands-on labs across Cloud Storage, GKE, and Cloud Run.",
-  },
-  {
-    year: "2025",
-    title: "FeeSense — Smart School FinTech Challenge",
-    org: "Unstop",
-    description: "Designed and shipped a full-stack fee management platform; shortlisted in Round 1.",
-  },
-];
+export const internship = {
+  title: "Full Stack Web Development Intern",
+  company: "Future Interns",
+  description: "Working on practical web development projects involving frontend, backend, databases, and real-world application development."
+};
